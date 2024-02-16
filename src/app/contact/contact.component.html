@@ -1,0 +1,86 @@
+<div class="contact pt-4 pb-5">
+  <h2 class="text-uppercase mb-3 fs-1 fw-bolder text-center">
+    CONATCT SECTION
+  </h2>
+  <div class="star position-relative mx-auto">
+    <i class="fa-solid fa-star"></i>
+  </div>
+
+  <form
+    action=""
+    class="w-50 px-3 pb-5 mx-auto mt-5 ng-valid ng-touched ng-dirty"
+  >
+    <label
+      for="userName"
+      class="position-relative labelposition"
+      [ngClass]="{
+        display: UNLabel > 0,
+        hide: UNLabel < 1
+      }"
+      >user Name :</label
+    >
+    <input
+      type="text"
+      placeholder="User Name"
+      id="userName"
+      class="form-control border-0 border-bottom py-3 position-relative ng-valid ng-touched ng-dirty"
+      (focus)="displayUN()"
+      (blur)="hide()"
+    />
+
+    <label
+      for="userAge"
+      class="position-relative labelposition"
+      [ngClass]="{
+        display: UALabel > 0,
+        hide: UALabel < 1
+      }"
+      >user Age :</label
+    >
+    <input
+      type="number"
+      placeholder="User Age"
+      id="userAge"
+      class="form-control border-0 border-bottom py-3 position-relative ng-valid ng-touched ng-dirty"
+      (focus)="displayUA()"
+      (blur)="hide()"
+    />
+
+    <label
+      for="userEmail"
+      class="position-relative labelposition"
+      [ngClass]="{
+        display: UELabel > 0,
+        hide: UELabel < 1
+      }"
+      >User Email :</label
+    >
+    <input
+      type="email"
+      placeholder="User Email"
+      id="userEmail"
+      class="form-control border-0 border-bottom py-3 position-relative ng-valid ng-touched ng-dirty"
+      (focus)="displayUE()"
+      (blur)="hide()"
+    />
+
+    <label
+      for="userPass"
+      class="position-relative labelposition"
+      [ngClass]="{
+        display: UPLabel > 0,
+        hide: UPLabel < 1
+      }"
+      >User Password :</label
+    >
+    <input
+      type="password"
+      placeholder="User Password"
+      id="userPass"
+      class="form-control border-0 border-bottom py-3 position-relative ng-valid ng-touched ng-dirty"
+      (focus)="displayUP()"
+      (blur)="hide()"
+    />
+    <button type="submit" class="btn mt-4 text-white">Send Message</button>
+  </form>
+</div>

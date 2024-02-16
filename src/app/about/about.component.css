@@ -1,0 +1,27 @@
+.star {
+  width: fit-content;
+}
+.star::after {
+  position: absolute;
+  right: -100px;
+  top: 10px;
+  content: "";
+  width: 80px;
+  height: 5px;
+  background-color: white;
+}
+
+.star::before {
+  position: absolute;
+  left: -100px;
+  top: 10px;
+  content: "";
+  width: 80px;
+  height: 5px;
+  background-color: white;
+}
+
+.about {
+  background-color: #1abc9c;
+  min-height: 75vh;
+}
